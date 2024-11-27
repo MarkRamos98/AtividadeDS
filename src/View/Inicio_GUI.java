@@ -52,6 +52,11 @@ public class Inicio_GUI extends javax.swing.JFrame {
         Ates_btn.setBounds(10, 250, 120, 40);
 
         Declara_btn.setText("Declaração");
+        Declara_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Declara_btnActionPerformed(evt);
+            }
+        });
         jPanel4.add(Declara_btn);
         Declara_btn.setBounds(270, 250, 120, 40);
 
@@ -99,6 +104,14 @@ public class Inicio_GUI extends javax.swing.JFrame {
             Logger.getLogger(Inicio_GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_Recei_btnActionPerformed
+
+    private void Declara_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Declara_btnActionPerformed
+        try {
+            Controller.Funcao_DAO.Declaracao();
+        } catch (Exception ex) {
+            Logger.getLogger(Inicio_GUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_Declara_btnActionPerformed
 
     /**
      * @param args the command line arguments

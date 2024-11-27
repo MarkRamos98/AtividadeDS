@@ -140,7 +140,7 @@ public class Funcao_DAO {
         }
         Desktop.getDesktop().open(new File("Relatorio1.pdf"));
     }
-    public static void Declaraçaõ()throws Exception {
+    public static void Declaracao()throws Exception {
         
         Document doc = null;
         OutputStream os = null;
